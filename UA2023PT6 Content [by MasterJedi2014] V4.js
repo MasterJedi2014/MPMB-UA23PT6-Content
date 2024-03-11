@@ -33,7 +33,7 @@ ClassList.cleric_ua23pt6 = {
 	regExpSearch : /(cleric|priest|clergy)/i,
 	source : [["UA23PT6", 9], ["MJ:HB", 0]],
 	primaryAbility : "Wisdom",
-	prerequisite : "Charisma 13+",
+	prerequisite : "Wisdom 13+",
 	prereqeval : function(v) {
 		return What('Wis') >= 13;
 	},

@@ -14,6 +14,7 @@ More specifically, this script adds the following:
 - CreatureList entries for each of the Beast Master Ranger's Primal Beasts
 - The "Beast of the Sea" creature's "Binding Strike" attack
 - Six Fighting Style Feats
+
 This encompasses all of the content in this UA article that wasn't superseded or removed in later content.
 
 # This script DOES NOT add the Bard class that appeared in this UA article because the Arcane, Divine, and Primal Spell Lists have been removed from playtesting & the Bard in this UA article depends on those Spell Lists to function correctly.

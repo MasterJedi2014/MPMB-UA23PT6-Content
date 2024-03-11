@@ -17,8 +17,11 @@ More specifically, this script adds the following:
 
 This encompasses all of the content in this UA article that wasn't superseded or removed in later content.
 
-# This script DOES NOT add the Bard class that appeared in this UA article because the Arcane, Divine, and Primal Spell Lists have been removed from playtesting & the Bard in this UA article depends on those Spell Lists to function correctly.
+_**This script DOES NOT add the Bard class that appeared in this UA article because the Arcane, Divine, and Primal Spell Lists have been removed from playtesting & the Bard in this UA article depends on those Spell Lists to function correctly.**_
 Please find the UA22XC Bard script for a working UA Bard class and subclasses; link here: (Still in development; link will be here once it is complete)
+
+**Known Bugs:**
+- The Primal Beasts do not automatically update their HP & AC as they should when the character's level increases.
 
 This script will allow users to more easily playtest the upcoming revision to D&D 5E.
 

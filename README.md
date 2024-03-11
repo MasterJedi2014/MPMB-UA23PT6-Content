@@ -1,7 +1,10 @@
 # MPMB-UA23PT6-Content
 This script adds the content from the "Unearthed Arcana 2023: Player's Handbook Playtest 6" article to the MPMB character sheet.
 
-More specifically, this script adds the following:
+**Script Credit Note:**
+A lot of the content of this script is either ripped directly from existing code or is an altered form of existing code. I have tried to diligently note when I copied code from elsewhere, but I probably missed some instances. A lack of note saying I ripped the code from elsewhere either means that I wrote that section of code entirely myself or that the code that was copied to use as a starting point was so heavily altered by me that almost nothing of the copied code exists.
+
+**Detailed List of Script Content:**
 - UA23PT6 Cleric & its subclasses
 - UA23PT6 Paladin & its subclasses
 - UA23PT6 Ranger & its subclasses

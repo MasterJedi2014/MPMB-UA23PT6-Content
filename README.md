@@ -28,7 +28,8 @@ Please find the UA22XC Bard script for a working UA Bard class and subclasses; l
 
 
 **Known Bugs:**
-- The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.
+- ~~The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.~~
+- No known bugs at this time. Will update when new ones are found (because I am sure there are others in this monster of a file).
 
 For instructions on how to add this script to the sheet, please see this page: https://www.flapkan.com/how-to/add-more-content
 

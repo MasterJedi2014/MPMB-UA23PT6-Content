@@ -2949,7 +2949,7 @@ CreatureList["beast of the land ua23pt6"] = {
 	companion : ["companion", "companion_not_al", "primal companion ua23pt6"],
 	companionApply : "companion",
 	alignment : "Unaligned",
-	ac : 13,
+	ac : "13+Prof",
 	hp : 10,
 	hd : [1, 8],
 	hdLinked : ["ranger", "ranger_ua23pt6"],
@@ -2960,11 +2960,8 @@ CreatureList["beast of the land ua23pt6"] = {
 	scores : [14, 14, 15, 8, 14, 11],
 	attacksAction : 1,
 	calcChanges : {
-		extraAC : [{
-			mod : 'Prof',
-		}],
 		hp : function (totalHD, HDobj, prefix) {
-			if (!classes.known.ranger || !classes.known.ranger_ua23pt6) return;
+			if (!classes.known.ranger && !classes.known.ranger_ua23pt6) return;
 			var rgrLvl = classes.known.ranger ? classes.known.ranger.level : classes.known.ranger_ua23pt6.level;
 			HDobj.alt.push(5 + 5 * rgrLvl);
 			HDobj.altStr.push(" = 5 as a base\n + " + "5 \xD7" + rgrLvl + " from its master's Ranger level");
@@ -3009,7 +3006,7 @@ CreatureList["beast of the sea ua23pt6"] = {
 	companion : ["companion", "companion_not_al", "primal companion ua23pt6"],
 	companionApply : "companion",
 	alignment : "Unaligned",
-	ac : 13,
+	ac : "13+Prof",
 	hp : 10,
 	hd : [1, 8],
 	hdLinked : ["ranger", "ranger_ua23pt6"],
@@ -3020,11 +3017,8 @@ CreatureList["beast of the sea ua23pt6"] = {
 	scores : [14, 14, 15, 8, 14, 11],
 	attacksAction : 1,
 	calcChanges : {
-		extraAC : [{
-			mod : 'Prof',
-		}],
 		hp : function (totalHD, HDobj, prefix) {
-			if (!classes.known.ranger || !classes.known.ranger_ua23pt6) return;
+			if (!classes.known.ranger && !classes.known.ranger_ua23pt6) return;
 			var rgrLvl = classes.known.ranger ? classes.known.ranger.level : classes.known.ranger_ua23pt6.level;
 			HDobj.alt.push(5 + 5 * rgrLvl);
 			HDobj.altStr.push(" = 5 as a base\n + " + "5 \xD7" + rgrLvl + " from its master's Ranger level");
@@ -3062,7 +3056,7 @@ CreatureList["beast of the sky ua23pt6"] = {
 	companion : ["companion", "companion_not_al", "primal companion ua23pt6"],
 	companionApply : "companion",
 	alignment : "Unaligned",
-	ac : 13,
+	ac : "13+Prof",
 	hp : 8,
 	hd : [1, 6],
 	hdLinked : ["ranger", "ranger_ua23pt6"],
@@ -3077,7 +3071,7 @@ CreatureList["beast of the sky ua23pt6"] = {
 			mod : 'Prof',
 		}],
 		hp : function (totalHD, HDobj, prefix) {
-			if (!classes.known.ranger || !classes.known.ranger_ua23pt6) return;
+			if (!classes.known.ranger && !classes.known.ranger_ua23pt6) return;
 			var rgrLvl = classes.known.ranger ? classes.known.ranger.level : classes.known.ranger_ua23pt6.level;
 			HDobj.alt.push(4 + 4 * rgrLvl);
 			HDobj.altStr.push(" = 4 as a base\n + " + "4 \xD7" + rgrLvl + " from its master's Ranger level");

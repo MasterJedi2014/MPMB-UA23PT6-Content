@@ -24,7 +24,7 @@ This script will allow users to more easily playtest the upcoming revision to D&
 
 _**This script DOES NOT add the Bard class that appeared in this UA article because the Arcane, Divine, and Primal Spell Lists have been removed from playtesting & the Bard in this UA article heavily depends on those Spell Lists to function correctly.**_
 
-Please find the UA22XC Bard script for a working UA Bard class and subclasses; link here: (Still in development; link will be here once it is complete)
+Please find the UA22XC Bard script for a working UA Bard class and subclass; link here: https://github.com/MasterJedi2014/MPMB-UA22XC-Bard
 
 
 **Known Bugs:**

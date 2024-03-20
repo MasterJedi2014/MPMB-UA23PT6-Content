@@ -32,6 +32,7 @@ Please find the UA22XC Bard script for a working UA Bard class and subclass; lin
   - Fixed a bug preventing Primal Beasts from automatically updating their HP & AC.
 - **2024-03-20:**
   - Fixed a bug wherein the Trickery Cleric's domain spell list was a duplicate of the Life Cleric's domain spell list instead of consisting of it's own list of domain spells.
+  - Added "Additional Ranger Spells" optional class feature to the Ranger. (I finally found it in the "all_WotC_pub+UA.js" file)
   - Added support for the *UA22CS* spells.
 
 

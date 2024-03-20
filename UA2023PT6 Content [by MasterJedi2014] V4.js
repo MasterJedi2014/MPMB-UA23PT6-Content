@@ -19,6 +19,7 @@ SourceList["UA23PT6"] = {
 	name : "Unearthed Arcana 2023: Player's Handbook Playtest 6",
 	abbreviation : "UA23PT6",
 	date : "2023/06/29",
+	url : "https://media.dndbeyond.com/compendium-images/ua/ph-playtest6/OJVW7QLuHjEFCCVs/UA-2023-PH-Playtest6.pdf",
 };
 
 /* 	Bard will not be added in this script because the Arcane, Divine, and Primal Spell Lists have been removed

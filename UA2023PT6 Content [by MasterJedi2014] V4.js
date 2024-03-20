@@ -1520,7 +1520,7 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], tr
 }, "2nd-level ranger Fighting Style choice");
 
 //// Add Ranger optional choices
-AddFeatureChoice(ClassList.ranger_ua23pt6.features["spellcasting ua23pt6"], true, "Access to Dunamancy Spells", {
+AddFeatureChoice(ClassList.ranger_ua23pt6.features["spellcasting ua23pt6"], true, "Access to Dunamancy Spells", { //Ripped directly from all_WotC_pub+UA.js and then altered
 	name : "Dunamancy Spells",
 	extraname : "Optional Ranger 1",
 	source : [["W", 186]],
@@ -1537,6 +1537,23 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["spellcasting ua23pt6"], true
 			"This optional class feature expands the spell list of the ranger class with all dunamancy spells (spell level in brackets): Gift of Alacrity (1), Magnify Gravity (1), Fortune's Favor (2), Immovable Object (2), Wristpocket (2), Pulse Wave (3), Gravity Sinkhole (4), and Temporal Shunt (5)."
 		]
 	}
+}, "Optional 1st-level ranger features");
+AddFeatureChoice(ClassList.ranger_ua23pt6.features["spellcasting ua23pt6"], true, "Additional Ranger Spells", { //Ripped directly from all_WotC_pub+UA.js and then altered
+	name : "Additional Ranger Spells",
+	extraname : "Optional Ranger 1",
+	source : [["T", 57]],
+	description : "",
+	calcChanges : {
+		spellList : [
+			function(spList, spName, spType) {
+				// Stop this is not the class' spell list or if this is for a bonus spell entry
+				if ((spName !== "ranger" && spName !== "rangerua") || spType.indexOf("bonus") !== -1) return;
+				spList.extraspells = spList.extraspells.concat(["entangle", "searing smite", "aid", "aid ua22cs", "enhance ability", "gust of wind", "magic weapon", "elemental weapon", "meld into stone", "revivify", "dominate beast", "greater restoration"]);
+			},
+			"This optional class feature expands the spell list of the ranger class with the following spells (spell level in brackets): Entangle (1), Searing Smite (1), Aid (2), Enhance Ability (2), Gust of Wind (2), Magic Weapon (2), Elemental Weapon (3), Meld into Stone (3), Revivify (3), Dominate Beast (4), and Greater Restoration (5)."
+		]
+	},
+	prereqeval : function (v) { return (classes.known.ranger && classes.known.ranger.level >= 2) || (classes.known.rangerau && classes.known.rangerau.level >= 2) ? true : "skip"; }
 }, "Optional 1st-level ranger features");
 
 ////// Add UA23PT6 Beast Master Ranger subclass

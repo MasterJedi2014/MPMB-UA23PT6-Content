@@ -27,8 +27,17 @@ _**This script DOES NOT add the Bard class that appeared in this UA article beca
 Please find the UA22XC Bard script for a working UA Bard class and subclass; link here: https://github.com/MasterJedi2014/MPMB-UA22XC-Bard
 
 
+**Script Patch Notes:**
+- **2024-03-12:**
+  - Fixed a bug preventing Primal Beasts from automatically updating their HP & AC.
+- **2024-03-20:**
+  - Fixed a bug wherein the Trickery Cleric's domain spell list was a duplicate of the Life Cleric's domain spell list instead of consisting of it's own list of domain spells.
+  - Added support for the *UA22CS* spells.
+
+
 **Known Bugs:**
-- ~~The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.~~
+- ~~The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.~~ **UPDATE 2024-03-12:** Primal Beasts should now automatically update their HP & AC.
+- ~~The Trickery Cleric's domain spell list was incorrectly a copy of the Life Cleric's domain spell list.~~ **UPDATE 2024-03-20:** The Trickery Cleric's domain spell list is now accurate to the UA.
 - No known bugs at this time. Will update when new ones are found (because I am sure there are others in this monster of a file).
 
 **Script Content Source:** https://media.dndbeyond.com/compendium-images/ua/ph-playtest6/OJVW7QLuHjEFCCVs/UA-2023-PH-Playtest6.pdf

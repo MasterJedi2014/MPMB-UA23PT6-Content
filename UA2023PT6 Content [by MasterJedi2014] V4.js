@@ -3,7 +3,7 @@
 	Effect:		This script adds the content from the 2023 Unearthed Arcana "Player's Handbook Playtest 6" article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MPMB and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference
-	Date:		2024-03-11 (sheet v13.1.0)
+	Date:		2024-03-20 (sheet v13.1.0)
 */
 
 var iFileName = "UA2023PT6 Content [by MasterJedi2014] V4.js";
@@ -12,7 +12,7 @@ RequiredSheetVersion("13.1.0");
 SourceList["MJ:HB"] = {
 	name : "MasterJedi2014's Homebrew",
 	abbreviation : "MJ:HB",
-	date : "2024/03/11",
+	date : "2024/03/20",
 };
 
 SourceList["UA23PT6"] = {
@@ -372,7 +372,7 @@ AddSubClass("cleric_ua23pt6", "life domain_ua23pt6", {
 	regExpSearch : /^(?=.*(cleric|priest|clergy))(?=.*\b(life|living)\b).*$/i,
 	subname : "Life Domain",
 	source : [["UA23PT6", 13], ["MJ:HB", 0], ["SRD", 17], ["P", 60]],
-	spellcastingExtra : ["aid", "aura of life", "bless", "cure wounds", "cure wounds ua23pt8", "death ward", "greater restoration", "lesser restoration", "mass healing word", "mass healing word ua23pt8", "revivify", "mass cure wounds", "mass cure wounds ua23pt8"],
+	spellcastingExtra : ["aid", "aid ua22cs", "aura of life", "bless", "cure wounds", "cure wounds ua23pt8", "death ward", "greater restoration", "lesser restoration", "mass healing word", "mass healing word ua23pt8", "revivify", "mass cure wounds", "mass cure wounds ua23pt8"],
 	features : {
 		"subclassfeature3" : { //Ripped directly from ListClasses.js and then altered
 			name : "Disciple of Life",
@@ -538,7 +538,7 @@ AddSubClass("cleric_ua23pt6", "trickery domain_ua23pt6", {
 	regExpSearch : /^(?=.*(cleric|priest|clergy))(?=.*(trickery|trickster)).*$/i,
 	subname : "Trickery Domain",
 	source : [["UA23PT6", 15], ["MJ:HB", 0], ["P", 63]],
-	spellcastingExtra : ["aid", "aura of life", "bless", "cure wounds", "cure wounds ua23pt8", "death ward", "greater restoration", "lesser restoration", "mass healing word", "mass healing word ua23pt8", "revivify", "mass cure wounds", "mass cure wounds ua23pt8"],
+	spellcastingExtra : ["charm person", "disguise self", "pass without trace", "invisibility", "hypnotic pattern", "nondetection", "confusion", "dimension door", "hold monster", "mislead"],
 	features : {
 		"subclassfeature3" : { //Ripped directly from all_WotC_pub+UA.js and then altered
 			name : "Blessing of the Trickster",
@@ -589,7 +589,7 @@ AddSubClass("cleric_ua23pt6", "war domain_ua23pt6", {
 	regExpSearch : /^(?=.*(cleric|priest|clergy))(?=.*\b(war|fighting)\b).*$/i,
 	subname : "War Domain",
 	source : [["UA23PT6", 16], ["MJ:HB", 0], ["P", 63]],
-	spellcastingExtra : ["crusader's mantle", "destructive wave", "divine favor", "freedom of movement", "hold monster", "magic weapon", "shield of faith", "spirit guardians", "spiritual weapon", "stoneskin"],
+	spellcastingExtra : ["crusader's mantle", "destructive wave", "divine favor", "freedom of movement", "hold monster", "magic weapon", "shield of faith", "spirit guardians", "spiritual weapon", "spiritual weapon ua22cs", "stoneskin"],
 	features : {
 		"subclassfeature3" : {
 			name : "War Priest",
@@ -943,7 +943,7 @@ AddSubClass("paladin_ua23pt6", "oath of devotion_ua23pt6", {
 	regExpSearch : /^(?=.*(devotion))((?=.*paladin)|((?=.*(exalted|sacred|holy))(?=.*(knight|fighter|warrior|warlord)))).*$/i,
 	subname : "Oath of Devotion",
 	source : [["UA23PT6", 36], ["SRD", 32], ["P", 86], ["MJ:HB", 0]],
-	spellcastingExtra : ["aid", "beacon of hope", "commune", "dispel magic", "flame strike", "freedom of movement", "guardian of faith", "protection from evil and good", "shield of faith", "zone of truth"],
+	spellcastingExtra : ["aid", "aid ua22cs", "beacon of hope", "commune", "dispel magic", "flame strike", "freedom of movement", "guardian of faith", "protection from evil and good", "shield of faith", "zone of truth"],
 	toNotesPage : [{
 		name : "Tenants of Devotion",
 		note : [
@@ -1175,7 +1175,7 @@ AddSubClass("paladin_ua23pt6", "oath of vengeance_ua23pt6", {
 	regExpSearch : /^(((?=.*(vengeance|wrath))((?=.*paladin)|((?=.*(exalted|sacred|holy))(?=.*(knight|fighter|warrior|warlord)))))|((?=.*dark)(?=.*knight))|(?=.*avenger)).*$/i,
 	subname : "Oath of Vengeance",
 	source : [["UA23PT6", 39], ["P", 88], ["MJ:HB", 0]],
-	spellcastingExtra : ["bane", "compelled duel", "hold person", "misty step", "haste", "protection from energy", "banishment", "dimension door", "hold monster", "scrying"],
+	spellcastingExtra : ["bane", "compelled duel", "hold person", "misty step", "haste", "protection from energy", "banishment", "banishment ua22cs", "dimension door", "hold monster", "scrying"],
 	toNotesPage : [{
 		name : "Tenants of Vengeance",
 		note : [

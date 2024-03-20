@@ -10,7 +10,7 @@ A lot of the content of this script is either ripped directly from existing code
 - UA23PT6 Ranger & its subclasses
 - UA23PT6 Rogue & its subclasses
 - UA23PT6 spells
-- CompanionList menu option for the UA23PT6 "Find Steed" spell
+- CompanionList menu option for the UA23PT6 **Find Steed** spell
 - CreatureList entries of the "Otherworldly Steed" creature for each spell level
 - The "Otherworldly Steed" creature's "Otherworldly Slam" attack
 - CompanionList menu option for the Beast Master Ranger's Primal Beasts

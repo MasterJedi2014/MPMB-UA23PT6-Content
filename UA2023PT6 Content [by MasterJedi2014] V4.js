@@ -3,7 +3,7 @@
 	Effect:		This script adds the content from the 2023 Unearthed Arcana "Player's Handbook Playtest 6" article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MPMB and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference
-	Date:		2024-03-20 (sheet v13.1.0)
+	Date:		2024-04-05 (sheet v13.1.0)
 */
 
 var iFileName = "UA2023PT6 Content [by MasterJedi2014] V4.js";
@@ -12,7 +12,7 @@ RequiredSheetVersion("13.1.0");
 SourceList["MJ:HB"] = {
 	name : "MasterJedi2014's Homebrew",
 	abbreviation : "MJ:HB",
-	date : "2024/03/20",
+	date : "2024/04/05",
 };
 
 SourceList["UA23PT6"] = {
@@ -850,8 +850,8 @@ AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], t
 	source : [["UA23PT6", 34], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Defense Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.paladin_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("defense fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("defense fighting style ua23pt6"); }
+	eval : function() { AddFeat("Defense Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Defense Fighting Style (UA23PT6)"); }
 }, "2nd-level paladin Fighting Style choice");
 AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Dueling", {
 	name : "Fighting Style: Dueling",
@@ -859,8 +859,8 @@ AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], t
 	source : [["UA23PT6", 34], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Dueling Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.paladin_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("dueling fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("dueling fighting style ua23pt6"); }
+	eval : function() { AddFeat("Dueling Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Dueling Fighting Style (UA23PT6)"); }
 }, "2nd-level paladin Fighting Style choice");
 AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Great Weapon Fighting", {
 	name : "Fighting Style: Great Weapon Fighting",
@@ -868,8 +868,8 @@ AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], t
 	source : [["UA23PT6", 34], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Great Weapon Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.paladin_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("great weapon fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("great weapon fighting style ua23pt6"); }
+	eval : function() { AddFeat("Great Weapon Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Great Weapon Fighting Style (UA23PT6)"); }
 }, "2nd-level paladin Fighting Style choice");
 AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Protection", {
 	name : "Fighting Style: Protection",
@@ -877,8 +877,8 @@ AddFeatureChoice(ClassList.paladin_ua23pt6.features["fighting style ua23pt6"], t
 	source : [["UA23PT6", 34], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Protection Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.paladin_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("protection fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("protection fighting style ua23pt6"); }
+	eval : function() { AddFeat("Protection Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Protection Fighting Style (UA23PT6)"); }
 }, "2nd-level paladin Fighting Style choice");
 
 //// Add Paladin optional choices; Ripped directly from all_WotC_pub+UA.js and then altered
@@ -1489,8 +1489,8 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], tr
 	source : [["UA23PT6", 43], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Archery Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.ranger_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("archery fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("archery fighting style ua23pt6"); }
+	eval : function() { AddFeat("Archery Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Archery Fighting Style (UA23PT6)"); }
 }, "2nd-level ranger Fighting Style choice");
 AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Defense", {
 	name : "Fighting Style: Defense",
@@ -1498,8 +1498,8 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], tr
 	source : [["UA23PT6", 43], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Defense Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.ranger_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("defense fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("defense fighting style ua23pt6"); }
+	eval : function() { AddFeat("Defense Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Defense Fighting Style (UA23PT6)"); }
 }, "2nd-level ranger Fighting Style choice");
 AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Dueling", {
 	name : "Fighting Style: Dueling",
@@ -1507,8 +1507,8 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], tr
 	source : [["UA23PT6", 43], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Dueling Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.ranger_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("dueling fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("dueling fighting style ua23pt6"); }
+	eval : function() { AddFeat("Dueling Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Dueling Fighting Style (UA23PT6)"); }
 }, "2nd-level ranger Fighting Style choice");
 AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], true, "Fighting Style: Two-Weapon Fighting", {
 	name : "Fighting Style: Two-Weapon Fighting",
@@ -1516,8 +1516,8 @@ AddFeatureChoice(ClassList.ranger_ua23pt6.features["fighting style ua23pt6"], tr
 	source : [["UA23PT6", 43], ["MJ:HB", 0]],
 	description : "\n   " + "I have chosen the Two-Weapon Fighting Style feat.",
 	prereqeval : function (v) { return classes.known.ranger_ua23pt6.level >= 2 ? true : "skip"; },
-	eval : function() { AddFeat("two_weapon fighting style ua23pt6"); },
-	removeeval : function() { RemoveFeat("two_weapon fighting style ua23pt6"); }
+	eval : function() { AddFeat("Two-Weapon Fighting Style (UA23PT6)"); },
+	removeeval : function() { RemoveFeat("Two-Weapon Fighting Style (UA23PT6)"); }
 }, "2nd-level ranger Fighting Style choice");
 
 //// Add Ranger optional choices

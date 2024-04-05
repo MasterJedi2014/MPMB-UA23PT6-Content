@@ -34,10 +34,13 @@ Please find the UA22XC Bard script for a working UA Bard class and subclass; lin
   - Added "Additional Ranger Spells" optional class feature to the Ranger. (I finally found it in the "all_WotC_pub+UA.js" file)
   - Added support for the *UA22CS* spells.
   - Added URL attribute to the source section within the script.
+- **2024-04-05:**
+  - Fixed the AddFeatureChoice code for the Paladin & Ranger Fighting Styles; the choices were previously not adding their associated Fighting Style Feats.
 
 **Known Bugs:**
 - ~~The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.~~ **UPDATE 2024-03-12:** Primal Beasts should now automatically update their HP & AC.
 - ~~The Trickery Cleric's domain spell list was incorrectly a copy of the Life Cleric's domain spell list.~~ **UPDATE 2024-03-20:** The Trickery Cleric's domain spell list is now accurate to the UA.
+- ~~Paladin & Ranger Fighting Styles choices were previously not adding their associated Fighting Style Feats.~~ **UPDATE 2024-04-05:** The Fighting Style choices should now correctly add their associated Fighting Style Feats.
 - No known bugs at this time. Will update when new ones are found (because I am sure there are others in this monster of a file).
 
 **Script Content Source:** https://media.dndbeyond.com/compendium-images/ua/ph-playtest6/OJVW7QLuHjEFCCVs/UA-2023-PH-Playtest6.pdf

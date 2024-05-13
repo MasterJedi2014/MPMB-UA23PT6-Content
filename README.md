@@ -4,6 +4,9 @@ This script adds the content from the "Unearthed Arcana 2023: Player's Handbook 
 **Script Credit Note:**
 A lot of the content of this script is either ripped directly from existing code or is an altered form of existing code. I have tried to diligently note when I copied code from elsewhere, but I probably missed some instances. A lack of note saying I ripped the code from elsewhere either means that I wrote that section of code entirely myself or that the code that was copied to use as a starting point was so heavily altered by me that almost nothing of the copied code exists.
 
+# This script needs the following script loaded before this one or else the sheet runs into errors:
+- MPMB-UA23PT8-Weapons (https://github.com/MasterJedi2014/MPMB-UA23PT8-Weapons)
+
 **Detailed List of Script Content:**
 - UA23PT6 Cleric & its subclasses
 - UA23PT6 Paladin & its subclasses
@@ -36,6 +39,8 @@ Please find the UA22XC Bard script for a working UA Bard class and subclass; lin
   - Added URL attribute to the source section within the script.
 - **2024-04-05:**
   - Fixed the AddFeatureChoice code for the Paladin & Ranger Fighting Styles; the choices were previously not adding their associated Fighting Style Feats.
+- **2024-05-13:**
+  - Added proper Weapon Mastery support to the Paladin, Ranger, & Rogue. This addition means that this script is now dependent on the "MPMB-UA23PT8-Weapons" script.
 
 **Known Bugs:**
 - ~~The Primal Beasts do not automatically update their HP & AC as they should when the character's level changes.~~ **UPDATE 2024-03-12:** Primal Beasts should now automatically update their HP & AC.

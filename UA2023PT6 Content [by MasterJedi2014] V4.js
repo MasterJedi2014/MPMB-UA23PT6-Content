@@ -3,7 +3,7 @@
 	Effect:		This script adds the content from the 2023 Unearthed Arcana "Player's Handbook Playtest 6" article.
 				This file has been made by MasterJedi2014, borrowing a lot of code from MPMB and those who have contributed to the sheet's existing material.
 	Code by:	MasterJedi2014, using MorePurpleMoreBetter's code as reference
-	Date:		2024-04-05 (sheet v13.1.0)
+	Date:		2024-05-13 (sheet v13.1.0)
 */
 
 var iFileName = "UA2023PT6 Content [by MasterJedi2014] V4.js";
@@ -12,7 +12,7 @@ RequiredSheetVersion("13.1.0");
 SourceList["MJ:HB"] = {
 	name : "MasterJedi2014's Homebrew",
 	abbreviation : "MJ:HB",
-	date : "2024/04/05",
+	date : "2024/05/13",
 };
 
 SourceList["UA23PT6"] = {
@@ -713,6 +713,9 @@ ClassList.paladin_ua23pt6 = {
 				"I can use the Mastery property of two kinds of weapons of my choice with which I have proficiency.",
 				"I can change what weapons I can use the Mastery property of after finishing a Long Rest.",
 			]),
+			calcChanges : {
+				atkAdd : masteryFunctions.weaponMasteryAtkAdd
+			},
 			action : [
 				["reaction", "Wpn Mstry 1: [Wpn Name]"],
 				["reaction", "Wpn Mstry 2: [Wpn Name]"],
@@ -1355,6 +1358,9 @@ ClassList.ranger_ua23pt6 = {
 				"I can use the Mastery property of two kinds of weapons of my choice with which I have proficiency.",
 				"I can change what weapons I can use the Mastery property of after finishing a Long Rest.",
 			]),
+			calcChanges : {
+				atkAdd : masteryFunctions.weaponMasteryAtkAdd
+			},
 			action : [
 				["reaction", "Wpn Mstry 1: [Wpn Name]"],
 				["reaction", "Wpn Mstry 2: [Wpn Name]"],
@@ -1877,6 +1883,9 @@ ClassList.rogue_ua23pt6 = {
 				"I can use the Mastery property of two kinds of weapons of my choice with which I have proficiency.",
 				"I can change what weapons I can use the Mastery property of after finishing a Long Rest.",
 			]),
+			calcChanges : {
+				atkAdd : masteryFunctions.weaponMasteryAtkAdd
+			},
 			action : [
 				["reaction", "Wpn Mstry 1: [Wpn Name]"],
 				["reaction", "Wpn Mstry 2: [Wpn Name]"],
@@ -2913,7 +2922,7 @@ CreatureList["otherworldly steed ua23pt6 lvl 9"] = {
 	header : "Mount",
 };
 
-// Add UA23DP "Otherworldly Slam" weapon
+// Add UA23PT6 "Otherworldly Slam" weapon
 WeaponsList["otherworldly slam (ua23pt6)"] = {
 	name : "Otherworldly Slam (UA23PT6)",
 	source : [["UA23PT6", 64], ["SRD", 143], ["P", 240], ["MJ:HB", 0]],
